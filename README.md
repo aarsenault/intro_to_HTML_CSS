@@ -1,21 +1,20 @@
 # Intro to HTML and CSS:
 
 
-The purpose of this workshop is to introduce you to the core fundamentals of web development. This course is only one hour long so we won't be able to cover everything, but wherever possible I'm going to try and add as many extra resources for you all to continue your learning after this course is over. 
+The purpose of this workshop is to introduce you to the core fundamentals of web development. This course is only one hour long so we won't be able to cover everything written here - but we'll try and cover as much as possible and the rest is left as an exercise to the reader. Wherever possible I'm going to try and add as many extra resources for you all to continue your learning after this course is over. 
 
-with the fundamentals you learn here today, you should all be able to make simple web projects, or make a homepage to showcase your project and / or team. 
+With the fundamentals you learn here today, you should all be able to make simple web projects, or make a homepage to showcase your project and / or team. Beyond that, the skills you will learn today could lay the foundations for a future career in web-development! 
 
-As you can see from the set of skills you need to learn to become a Front-end developer, HTML, CSS, and JavaScript make up the very first skill set you need. They act as the foundation layer that everything else rests on. 
+As you can see from the set of skills you need to learn to become a Front-end developer, HTML, CSS, and JavaScript make up the very first set of skills you need. They act as the foundation layer that everything else rests on. 
 
-<figure><img src='img/frontend_roadmap.png'><figcaption>Web Developer Roadmap: Source = https://github.com/kamranahmedse/developer-roadmap</figcaption></figure>
-
+<figure><img src='img/frontend_roadmap.png'><figcaption>Web Developer Roadmap: Source: https://github.com/kamranahmedse/developer-roadmap</figcaption></figure>
 
 
 ## Getting Started
 
 Web programmers usually code in something called a text editor. If you already have a text editor installed please use that for this lecture.
 
-If you don't have one yet, to save time, you can follow along using [jsbin.com](https://jsbin.com/?html,css,js,output) which will let you code online. Make an account when you're finished to save your project. 
+If you don't have one yet, to save time, you can follow along using [jsbin.com](https://jsbin.com/?html,css,js,output) which will let you code online. Make an account when you're finished to save your project. However, going forward it's a good practice to start using an editor. 
 
 While you make your hackathon project, I recommend that you use a real text editor and not jsbin. I use [Visual Studio Code](https://code.visualstudio.com/) which is free and open sourced. Other popular choices are [Sublime Text](https://www.sublimetext.com/), or [Atom](https://atom.io/). If you're not sure which to use just go ahead and download VS Code - you can always change later. 
 
@@ -36,11 +35,9 @@ If you have clicked the link for [jsbin](https://jsbin.com/?html,css,js,output) 
 
 
 
-
-
 ## HTML BASICS:
 
-If you're using a text editor, make a new folder called `website`. in your `website` folder make a new file called `index.html` (by convention the main landing page of a website is often called index). Now in index.html copy and paste the following:
+If you're using a text editor, make a new folder called `website`. in your `website` folder make a new file called `index.html` (by convention the main landing page of a website is often called index). Now in index.html copy and paste the following (or if you're using Jsbin copy and paste the following into the HTML tab):
 
 
 ```
@@ -70,20 +67,15 @@ So - lets add some content to our page. In between the `<body>` `</body>` tags a
 
 `<h1> Hello World! </h1>`
 
-h1 stands for Headline 1. 
+`h1` stands for Headline 1. 
 HTML can use headlines h1-h6 where h1 is used for the big important stuff, and h6 is used for smaller things. to see what these look like Add this between the `<body>` tags:
 
 
 `<h1> Hello World! </h1>`
-
 `<h2> Hello World! </h2>`
-
 `<h3> Hello World! </h3>`
-
 `<h4> Hello World! </h4>`
-
 `<h5> Hello World! </h5>`
-
 `<h6> Hello World! </h6>`
 
 then view your index.html file in your browser. To do this either right click the file in vscode and select `open in default browser` or simply navigate to your index.html file and double click on it and it will open in your browser. 
@@ -125,35 +117,36 @@ Ok - now let's erase those titles and create a simple web-page with what we've l
 
 Notice that I had to put in some `<br>` i.e. "line break" tags to format my skills section correctly. In an HTML document, and most programming languages too, all white space such as spaces and new lines are ignored! Keep that in mind when trying to format your text. Also notice that unlike the other tags there is no closing tag. This is because the break doesn't modify any text that would go between the tags, but modifies the page structure itself. 
 
-**Note**: 
-Notice we use indentations to keep things organized. The `<title>` tag is is indented from `<head>` tag. This doesn't affect how anything is rendered but will help you a lot to read and organize your code! 
+**Note!**: 
+Notice we use indentations to keep things organized. The `<title>` tag is is indented from `<head>` tag. Like extra linebreaks, this doesn't affect how anything is rendered but will help you a lot to read and organize your code! 
 
 
 
+### More Important Tags to Know:
 
-
-
-### More important tags:
-
-####* `<em>` 
+#### `<em>` 
 
 stands for emphasis and will italicize a word
 
-`<em>` example `</em>`: 
+`<em> example </em>`
+
+creates:
 
 <em> example </em>
 
-####* `<strong>` 
+#### `<strong>` 
 
 Will bold the words between tags
 
-`<strong>` example `</strong>`:
+`<strong> example </strong>`:
+
+creates:
  
 <strong> example </strong>
 
 These tags can be combined as well i.e. having an  `<em>` tag inside a sentence that is all bold. Try it!
 
-####* `<ul>` and `<li>` 
+#### `<ul>` and `<li>` 
 
 Will make an ***u**nordered **l**ist*:
 
@@ -166,7 +159,7 @@ Will make an ***u**nordered **l**ist*:
 </ul>
 ```
 
-gives:
+creates:
 
 
 <ul>
@@ -181,7 +174,7 @@ gives:
 
 similarly 
 
-####* `<ol>` and `<li>` 
+#### `<ol>` and `<li>` 
 
 Will make an ***o***rdered **l**ist*:
 
@@ -205,7 +198,7 @@ gives:
 </ol>
 
 
-####* `<img>`
+#### `<img>`
 
 will allow you to add images to your website. However you need to add an **attribute** to the tag which tells it where the **source** for the image is 
 
@@ -221,7 +214,7 @@ here `src`, `alt`, and `width` are all attributes that we pass to the image. `al
 
 
 
-####* `<a>`
+#### `<a>`
 
 The a tag stands for **anchor**. While the name is a little obscure, what it does is what create a link. Between the a tags we write the text we wish to display and the href attribute (stands for hyper reference) is the address we'd like to link to. 
 
@@ -234,7 +227,7 @@ creates:
 
 note that just as you can combine other tags, you can put images or whole paragraphs between `<a>` tags so that they become clickable! 
 
-#### * `<!-- -->`
+####  `<!-- -->`
 
 This is a special type of tag that represents a comment. Anything between the dashes will **not** be rendered by the browser. So this:
 
@@ -247,9 +240,9 @@ creates:
 ... nothing! 
 
 
-Comments are a good way to leave yourself notes in your HTML about what certain pieces of code may be doing, your thought process or if you wish to temporarily remove something to test what your site looks like without it - but don't want to permanently delete it - you can wrap it in a comment. 
+Comments are a good way to leave yourself notes in your HTML about what certain pieces of code may be doing, your thought process or if you wish to temporarily remove something to test what your site looks like without it - but don't want to permanently delete it - you can wrap it in a comment. Try it!
 
-These represent the basic html tags that you'll be using a majority of the time. For a complete list of all the different HTML tags you can go to [w3schools](https://www.w3schools.com/tags/default.asp). This is a great resource and will get you accustomed with reading documentation for libraries and frameworks - this actually a huge part of what programmers do on a day to day basis. Don't worry if you don't understand everything you read here though! Often times documentation covers a lot of very specialized things that you won't need to use the majority of the time. 
+These tags represent the basic html elements that you'll be using the majority of the time. For a complete list of all the different HTML tags you can go to [w3schools](https://www.w3schools.com/tags/default.asp). This is a great resource and will get you accustomed with reading documentation for libraries and frameworks - this is actually a huge part of what programmers do on a day to day basis. Don't worry if you don't understand everything you read here though! Often times documentation covers a lot of very specialized things that you won't need to use the majority of the time. 
 
 ___
 
@@ -266,7 +259,7 @@ ___
 
 ## CSS Basics:
 
-Now that we have a website that we has some information about ourself, we want to start styling it to make it look less bland. 
+Now that we have a website that we has some basic information about ourselves, we want to start styling it to make it look less bland. 
 
 
 Go back to the top of your homepage and add a `<style>` tag in the header
@@ -286,6 +279,8 @@ Go back to the top of your homepage and add a `<style>` tag in the header
 <body>
 
 ...
+
+...
 ```
 
 
@@ -300,6 +295,7 @@ Now in the style tag we want to change it so the colour of all our h2 tags is re
 	<meta charset="utf-8">
 	<title>Adriel's Homepage</title>
 	<style>
+	
 		h2 {
 			color: rgb(230, 0, 92);
 		}
@@ -312,15 +308,15 @@ Now in the style tag we want to change it so the colour of all our h2 tags is re
 ...
 ```
 
-colours can be given as rgb values (red, green, blue), or as hexadecimal values. You can use a [colour picker](https://www.w3schools.com/colors/colors_picker.asp) to help you choose the right values. 
+colours can be given as rgb values (red, green, blue), or as hexadecimal values (for this tutorial we'll stick to rgb values to keep it simple). You can use a [colour picker](https://www.w3schools.com/colors/colors_picker.asp) to help you choose colours you like. 
 
-the **h2** before the curly braces is the selector that your CSS rule (i.e, turn it red) is being applied to. This means that *all* h2 headings on your page will now be red. You can do the same thing for most html tags, such as p, body, a, etc. 
+the **h2** before the curly braces is the ***selector*** that your CSS rule (i.e, turn it red) is being applied to. This means that *all* h2 headings on your page will now be red. You can do the same thing for most html tags, such as `p`, `body`, `a`, etc. 
 
 **Note1** you *must* use the curly braces and also add the ; after each rule within the curly braces. This is just the arbitrary syntax that lets the browser know you are writing CSS rules. If something doesn't work, first check to make sure you've got this syntax correct. 
 
 
 
-Now, change the background of your page by adding this to your `<style>` tag
+Now, change the background of your page by adding this between your `<style>` tags:
 
 ```
 		body {
@@ -333,7 +329,7 @@ Now, change the background of your page by adding this to your `<style>` tag
 
 
 
-* Selecting by tag name, id and class
+### Selecting Elements by tag name, `id` and `class`:
 
 So now we can control how to add CSS styling to all Headers, or paragraphs etc. but what if we want to give a certain colour to just one? For instance in the example below we have two paragraphs and we want to change the background colour only for the first one:
 
@@ -416,10 +412,9 @@ To do that we'll need create an id for an element like so:
 </html>
 ``` 
 
-It's important to note that making an ids for tags must be unique! If you style something by using an id the purpose is to only style a single html element. 
+It's important to note that the ids for tags must be unique! If you style something by using an id the purpose is to only style a single html element. 
 
-
-If you want to style more than one thing, i.e a few paragraphs but not *all* paragraphs you can create a class and use that as a CSS selector. 
+So then, if you want to style more than one thing, i.e a few paragraphs but not *all* paragraphs you can create a class and use that as a CSS selector. 
 
 Creating a class selector is similar to creating an id. You first add an attribute to the tag like so:
 
@@ -453,14 +448,21 @@ and style the class, but instead of a `#` you use a `.`
 
 **Note!** class and Id names are case and spelling sensitive! They also don't accept spaces, so it's best to use `-` to separate words
 
-* Fonts
+### Fonts: 
+
+Try changing the font for your paragraphs by adding this to your style tag
 
 ```
 	<style>
 	
+		...
+		
 		p {
 			font-family: "Helvetica", sans-serif; 
 		}
+		
+		...
+		
 	</style>
 
 ```
@@ -482,64 +484,263 @@ Try changing the font size by playing with the `font-size` property
 
 ```
 
-For more info on Fonts and how to use them see the [w3schools](https://www.w3schools.com/css/css_font.asp) reference 
 
 
+more useful properties include:
+
+* `line-height`
+* `text-align`
+* `text-decoration`
+* `font-weight`
+
+and more! 
 
 
-* Layout
+What do these properties do to fonts? How do you use them?
 
 ___
 
 ###Exercise 2:
 
-Style the rest of your website using CSS. Add Backgrounds / Typefaces and section colours to make your site look the way you want.  
+Look up the properties listed above and figure out what they will do. Apply them to some text on your webpage.  [w3schools](https://www.w3schools.com/css/css_font.asp) reference
+
 ___
 
 
+### Inheritance: 
 
-## Hosting a Static Site with Github-Pages:
+A quick note on inheritance. You may have noticed that many of the text options that you place in the `body { }` section of your styles automatically get applied to all other fields that appear in the body, such as headers and paragraphs. Many CSS properties are inherited, though not all are. If you're not sure which is which you can add the style to your `body { }` or read the documentation online. 
 
-* Explanation of what Github is
-* How to make a Github account
-* How to have Github host your static website 
 
+
+### Layout:
+
+####`<span>` 
+
+creates an inline element. i.e. no newline afterwards
+
+
+`Hello <span class="wow"> World </span>`
+
+now we can add in our style section
+
+```
+<style>
+
+	.wow {
+		color: rgb(230, 0, 0);		
+	}
+
+</style>
+```
+
+and the color will be applied only to "World" 
+
+Try it! 
+
+####`<div>` 
+
+stands for division. 
+
+creates a block element. i.e. a newline after it
+
+
+by default div takes up 100% of the width, but we can change that. 
+
+```
+<style>
+
+	.blocks {
+		background: rgb(230, 230, 230);
+		color: rgb(230, 0, 0);	
+		width: 75%;
+
+	}
+
+</style>
+```
+
+
+If you adjust the height as well, say by adding 
+
+`height: 100px;`
+
+then you'll notice that the words overflow out of the box 
+
+
+#### Everything is a box! 
+
+All HTML elements are treated by the browser as a type of box which has the following properties.
+
+
+<figure><img src='img/boxmodel.png'><figcaption></figcaption></figure>
+
+
+By default, many of these properties are not visable, but we can change that to give ourselves a little nicer formating. 
+
+let's wrap the entire contents of our page with a container div:
+
+```
+...
+<body>
+	<div id="main-container">
+	
+	
+		... page content ...
+		
+	</div>
+</body>
+</html>
+```
+
+
+Now everything in your page is grouped by the container division and can be styled by that group. 
+
+
+in your styles add these properties one at a time and view your web page. What happens? What does the `margin: auto` property do? 
+
+
+```
+<styles>
+
+...
+	#main-container {
+	
+		width: 500px;
+		border: 2px solid rgb(150, 0, 150);
+		margin: auto; 
+		
+	}
+
+...
+
+
+<styles>
+```
+	
+Try creating new divs to wrap different sections of your web page and paying with the padding, border and margin properties. 
+
+Note too that you can apply them specifically to only one side by using -top, -bottom, -left, -right like so:
+
+
+...
+	#main-container {
+	
+		width: 500px;
+		border-right: 2px solid rgb(150, 0, 150);		
+		border-left: 10px solid rgb(0, 100, 0);	
+		
+	}
+
+...
+
+
+### Positioning: 
+
+
+Ok but, How do you add two elements side by side? Suppose you wanted some text to be displayed *beside* an image, not below it. 
+
+for that we can use the `float` property.
+
+
+try adding the CSS rule 
+
+`float: left;`
+
+to the image you added on your page. 
+
+now add
+
+`float: right;` 
+
+In the styles of whatever text you want to display beside it. Play around with the `margin` and `padding` and `border` until you get something that looks nice. 
+
+For more tips and tricks on positions, you can watch this quick video: 
+
+[Quick Kahn Academy tutorial on positioning](https://www.youtubeeducation.com/embed/V0-KK15Bc_g)
+
+___
+
+###Exercise 3:
+
+Now that you have most of the basic CSS skills you need to position and style a website, take a few minutes and make your personal website look great. 
+Add Backgrounds / Fonts / colours and adjust your layout to make your site look the way you want.  
+___
+
+
+<!-- TODO: Making a seperate sheet for you styles -->
 
 
 
 ## Where to go from here:
 
+### Hosting a Static Site with Github-Pages:
+
+Github is a website used to store and version control files. It's used by programmers and tech companies around the world. You're reading this file on Github right now! 
+
+Github also has a great feature that it can host basic websites for you. This means that you can push your website you've been working on to Github and it will create an address for your site that anyone in the world can visit. This will surely come in handy for your projects. 
+
+To set that up, you can follow along with this tutorial:
+
+
+[Hosting with Github](http://jmcglone.com/guides/github-pages/)
+
+
+
+
 #### Bootstrap
 
-* Brief explanation of what bootstrap is and how to use it
-* [getbootstrap.com](https://getbootstrap.com/) <br>
+Bootstrap is a framework that you can add to your pages that will handle a lot of the styling for you and help you create a good looking website fast. 
+
+It comes with a grid system, which breaks the page down into 6 equal strips. This helps positioning things in a pleasing way very easily. 
+
+To see the some templates and examples of what you can build visit the link below: 
+
+[getbootstrap.com](https://getbootstrap.com/docs/4.0/examples/) <br>
+
+
+More Bootsrap tutorials and resources: 
+
+[Bootstrap quick start guide] (https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+[Bootstrap Youtube tutorial series](https://www.youtube.com/watch?v=wesUO81YX0U)
+
+[w3schools Bootstrap 4 tutorial](https://www.w3schools.com/bootstrap4/default.asp)
 
 
 
-#### Javascript
 
-* Brief Explanation of how javascript makes pages dynamic 
+### Javascript
 
+So far we have learned the basics of HTML and CSS, but if you remember back to the introduction there was a third fundamental technology: JavaScript.
 
+While HTML and CSS structure and style the text of the page, they mostly change the way things look rather than how they behave. 
+
+Javascript, opposed to a markup language, is a programming language that can be run in the browser. This allows it bind html elements and change them using functions, conditional logic and loops. 
+
+For example - say you wanted a different message to display everytime a certain HTML element was clicked: this is a job for JavaScript! 
+
+Teaching JavaScript is beyond the scope of this class but I've included some resources to get you started below.
 
 ## Resources to Broaden your knowledge! 
 
  
-##### Extra Github Resources:
-
-[Interactive Github Tutorial](https://try.github.io/levels/1/challenges/1) <br>
-[Git-hub walkthrough](https://guides.github.com/activities/hello-world/) <br>
-[Udacity: How to use git and Github](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 
 
 ##### References / Documentation 
 
-When you're not sure how to do something, often times it's
+When you're not sure how to do something, often times it's often best to start with a google search, or start combing through the docs. (when you're first starting out, your google searches will probably bring you to one of these great resources:)
 
 [w3schools CSS reference and tutorials](https://www.w3schools.com/css/default.asp)
 
 [w3schools HTML reference and tutorials](https://www.w3schools.com/html/default.asp)
 
+[Mozilla Developer Network - Web Docs](https://developer.mozilla.org/en-US/)
+
+
+Another great resource is StackOverflow. It's a site where programmers ask and answer each other's questions and it's extremely useful. 
+
+[stackoverflow.com/](https://stackoverflow.com/)
 
 ##### Online HTML / CSS Courses:
 
@@ -553,3 +754,11 @@ When you're not sure how to do something, often times it's
 ##### Learning JavaScript:
 [Wes Bos: Javascript 30](https://javascript30.com/) <br>
 [Codecademy: intro to javascript](https://www.codecademy.com/learn/introduction-to-javascript)
+
+
+##### Extra Github Resources:
+
+[Interactive Github Tutorial](https://try.github.io/levels/1/challenges/1) <br>
+[Git-hub walkthrough](https://guides.github.com/activities/hello-world/) <br>
+[Udacity: How to use git and Github](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
+
