@@ -423,8 +423,7 @@ So then, if you want to style more than one thing, i.e a few paragraphs but not 
 
 Creating a class selector is similar to creating an id. You first add an attribute to the tag like so:
 
-`<p> class="bio-info"> blah blah blah blah 
-</p>`
+`<p class="bio-info"> blah blah blah blah </p>`
 
 and style the class, but instead of a `#` you use a `.`
 
