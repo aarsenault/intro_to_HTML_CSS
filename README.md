@@ -72,10 +72,15 @@ HTML can use headlines h1-h6 where h1 is used for the big important stuff, and h
 
 
 `<h1> Hello World! </h1>`
+
 `<h2> Hello World! </h2>`
+
 `<h3> Hello World! </h3>`
+
 `<h4> Hello World! </h4>`
+
 `<h5> Hello World! </h5>`
+
 `<h6> Hello World! </h6>`
 
 then view your index.html file in your browser. To do this either right click the file in vscode and select `open in default browser` or simply navigate to your index.html file and double click on it and it will open in your browser. 
@@ -246,7 +251,7 @@ These tags represent the basic html elements that you'll be using the majority o
 
 ___
 
-###Exercise 1:
+### Exercise 1:
 
 Create a version of a personal website for yourself! You can create whatever headings / sections you like and fill it in with some information about yourself. You can add some lists of your skills or projects, add a profile picture with `<img>`, and add some links to your LinkedIn or other social media with `<a>` tags. 
 ___
@@ -500,7 +505,7 @@ What do these properties do to fonts? How do you use them?
 
 ___
 
-###Exercise 2:
+### Exercise 2:
 
 Look up the properties listed above and figure out what they will do. Apply them to some text on your webpage.  [w3schools](https://www.w3schools.com/css/css_font.asp) reference
 
@@ -515,7 +520,7 @@ A quick note on inheritance. You may have noticed that many of the text options 
 
 ### Layout:
 
-####`<span>` 
+#### `<span>` 
 
 creates an inline element. i.e. no newline afterwards
 
@@ -538,7 +543,7 @@ and the color will be applied only to "World"
 
 Try it! 
 
-####`<div>` 
+#### `<div>` 
 
 stands for division. 
 
@@ -661,7 +666,7 @@ For more tips and tricks on positions, you can watch this quick video:
 
 ___
 
-###Exercise 3:
+### Exercise 3:
 
 Now that you have most of the basic CSS skills you need to position and style a website, take a few minutes and make your personal website look great. 
 Add Backgrounds / Fonts / colours and adjust your layout to make your site look the way you want.  
